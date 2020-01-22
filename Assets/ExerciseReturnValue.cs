@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class ExerciseReturnValue : MonoBehaviour
 {
+    public float randomMin;
+    public float randomMax;
     void Start ()
     {
         var IntReturnVariable = IntReturn();
@@ -12,7 +14,11 @@ public class ExerciseReturnValue : MonoBehaviour
         var StringReturnVariable = StringReturn();
         Debug.Log(IntReturnVariable);
         Debug.Log(FloatReturnVariable);
-        Debug.Log(StringReturnVariable);
+    }
+
+    private void Update()
+    {
+        Debug.Log(Random.Range(randomMin, randomMax));
     }
     public void NoReturn()
     {
