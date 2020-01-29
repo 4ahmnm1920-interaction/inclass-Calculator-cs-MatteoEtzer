@@ -14,19 +14,20 @@ public class ExerciseReturnValue : MonoBehaviour
         var StringReturnVariable = StringReturn();
         Debug.Log(IntReturnVariable);
         Debug.Log(FloatReturnVariable);
+        Debug.Log(StringReturnVariable);
     }
 
     private void Update()
     {
-        Debug.Log(Random.Range(randomMin, randomMax));
+        //Debug.Log(Random.Range(randomMin, randomMax));
     }
     public void NoReturn()
     {
     }
     public int IntReturn()
     {
-        int intR2 = 14;
-        return intR2;
+        int intR = 14;
+        return intR;
     }
     public float FloatReturn()
     {
